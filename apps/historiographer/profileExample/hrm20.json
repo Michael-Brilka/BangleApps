@@ -1,0 +1,40 @@
+{
+	"supervisorname" : "Supervisor",
+	
+	"fileSize" : 1024,
+	"ramSize" : 768,
+	
+	"hrmText" : ["Off","10ms","20ms","40ms","80ms","160ms","200ms"],
+	"hrmSpeed" :  2,
+	
+	"barometerSkips" : ["Off",0,1,2,3,5,10,20,50],
+	"barometerSkipsText" : ["Off",0,1,2,3,5,10,20,50],
+	"barometer" : 0,
+	
+	"magnetudeSkips" : ["Off",0,1,2,3,5,10,20,50],
+	"magnetudeSkipsText" : ["Off",0,1,2,3,5,10,20,50],
+	"magnetude" : 0,
+
+	"accelerometerSkips" : ["Off",0,1,2,3,5,10,20,50],
+	"accelerometerSkipsText" : ["Off",0,1,2,3,5,10,20,50],
+	"accelerometer" : 0,
+	
+	"compassSkips" : ["Off",0,1,2,3,4,5,10,20,40],
+	"compassSkipsText" : ["Off",0,1,2,3,4,5,10,20,40],
+	"compass" : 0,
+	
+	"gPSspeedSeconds" : ["Off",0,59,3599,7199],
+	"gPSspeedText" : ["Off","1s","1min","1h","2h"],
+	"gpsSpeed" : 0,
+	"gpsEnergysaving" : false,
+	
+	"storageNotifiy" : 512,
+	"batteryNotifiy" : 40,
+	
+	"storageSaving" : 738,
+	"turnOffStorage" : [false,false,false,false,false,false],
+	"energySaving" : 20,
+	"turnOffEnergy" : [false,false,false,false,false,false],
+	
+	"unlockPhrase" : "edit"
+}
