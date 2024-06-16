@@ -4,7 +4,7 @@ The goal of the Historiographer-App is to enable long term recordings of sensor 
 For decoding the file the decoder application can be used.
 
 ## Workflow
-![Process](https://github.com/Michael-Brilka/BangleApps/assets/33370237/e6f54ef6-4e60-4bfe-9b81-7031b616fccb)
+![Process](https://github.com/Michael-Brilka/BangleApps/tree/master/apps/historiographer/Process.svg)
 
 ## Profiles
 Profiles enable a fast way to setup the Historiographer app. 
