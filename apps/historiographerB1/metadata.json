@@ -7,7 +7,6 @@
   "description": "Saves sensor data at a selected intervall, in a binary format. For decoding use external decoder executable. ",
   "tags": "tool,outdoors,health",
   "supports": ["BANGLEJS"],
-  "dependencies":{"textinput":"type"},
   "readme": "README.md",
   "interface": "interface.html",
   "storage": [
