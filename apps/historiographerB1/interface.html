@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../../css/spectre.min.css">
+  </head>
+  <body>
+    <div id="data"></div>
+    <button class="btn btn-default" id="btnSave">Save</button>
+    <button class="btn btn-default" id="btnDelete">Delete</button>
+    <script src="../../core/lib/interface.js"></script>
+    <script>
+var dataElement = document.getElementById("data");
+var binData = "";
+
+function getData() {
+  Util.showModal("Loading...");
+  dataElement.innerHTML = "<b> </b>";
+  Util.readStorage("user.bin", data => {
+    binData = data;
+    if(binData != ""){
+      dataElement.innerHTML = "<b>Data Found </b>";
+    }
+    else{
+      dataElement.innerHTML = "<b>No data Found </b>";
+    }
+    Util.hideModal();
+  });
+}
+// You can call a utility function to save the data
+document.getElementById("btnSave").addEventListener("click", function() {
+  Util.showModal("Downloading...");
+  Util.saveFile("user.bin", "application/bin", binData);
+  Util.hideModal();
+});
+// Or you can also delete the file
+document.getElementById("btnDelete").addEventListener("click", function() {
+  Util.showModal("Deleting...");
+  Util.eraseStorage("user.bin", function() {
+    Util.hideModal();
+    getData();
+  });
+});
+// Called when app starts
+function onInit() {
+  getData();
+}
+    </script>
+  </body>
+</html>

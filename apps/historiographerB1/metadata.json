@@ -1,0 +1,21 @@
+{
+  "id": "historiographer",
+  "name": "Historiographer",
+  "shortName":"Historiographer",
+  "icon": "app.png",
+  "version":"1.0",
+  "description": "Saves sensor data at a selected intervall, in a binary format. For decoding use external decoder executable. ",
+  "tags": "tool,outdoors,health",
+  "supports": ["BANGLEJS1"],
+  "dependencies":{"textinput":"type"},
+  "readme": "README.md",
+  "interface": "interface.html",
+  "storage": [
+    {"name":"historiographer.app.js","url":"app.js"},
+    {"name":"historiographer.img","url":"app-icon.js","evaluate":true},
+    {"name":"availableConfigs.json","url":"availableConfigs.json"}
+  ],
+  "data": [
+    {"wildcard":"user.bin","storageFile":true}
+  ]
+}
