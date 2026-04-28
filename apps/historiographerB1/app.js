@@ -1061,8 +1061,8 @@ function loadProfile(id) {
     selectedCompass = setting.compassB1;
     if (setting.compassB1 != "Off") {
       Bangle.setCompassPower(1, appID);
-      compassHeadingFloat32 = setting.compassHeadingF32;
-      historiographer.setCompass(true, setting.compassHeadingF32, compassBAddr);
+      compassHeadingFloat32 = setting.compassHeadingFloat32;
+      historiographer.setCompass(true, setting.compassHeadingFloat32, compassBAddr);
     }
 
     selectedGPSspeed = setting.gpsSpeedB1;
