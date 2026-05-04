@@ -504,13 +504,13 @@ let historiographer = E.compiledC(`
 
   It returns if the array is full.
   ***/
-  bool writeHRM(char ppg, int deltatime){
+  bool writeHRM(int ppg, int deltatime){
     writePreamble(localHRMID, deltatime);
     writeBit(ppg>=0);
     if(ppg < 0){
       ppg = -(ppg+1);
     }
-    unsigned char ppgLower = ppg & 127;
+    int ppgLower = ppg & 127;
     
     writeNBits(ppgLower, 7);
     
